@@ -133,6 +133,7 @@ open class BaseMessageCollectionViewCell<BubbleViewType>: UICollectionViewCell, 
     func createAvatarView() -> UIImageView! {
         let avatarImageView = UIImageView(frame: CGRect.zero)
         avatarImageView.isUserInteractionEnabled = true
+        avatarImageView.contentMode = .scaleAspectFit
         return avatarImageView
     }
 
